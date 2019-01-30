@@ -10,29 +10,40 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card text-center">
+    <div id="sidebar">
+        <li class="btn-simple text-negrite">Menu</li>
+        <li class="btn-simple"><a href="#" class="text-simple">Home</a></li>
+        <li class="btn-simple"><a href="#movies" class="text-simple">Movies</a></li>
+        <li class="btn-simple"><a href="#about" class="text-simple">About</a></li>
+    </div>
+    <div class="container" id="page-content">
+      <div class="card text-center" id="#">
         <img src="./images/foto_perfil.jpeg" alt="Perfil Photo" class="img-circle">
         <h1>Marcelo Miyachi</h1>
         <h2>Alumni @Le Wagon</h2>
         <p>Learning to code at Le Wagon!</p>
-        <a href="https://www.lewagon.com/" target="_blank" class="btn-red">See yourself</a>
+        <a href="https://www.lewagon.com/" target="_blank" class="btn-blue">See yourself</a>
       </div>
       <div class="card">
         <ul class="list-inline text-center">
           <li>
             <a href="https://www.facebook.com/marcelo.miyachi" target="_blank">
-              <i class="fab fa-facebook-f btn-white"></i>
+              <i class="fab fa-facebook-f icons"></i>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/marcelo-miyachi-17a67a12b/" target="_blank">
-              <i class="fab fa-linkedin-in btn-white"></i>
+              <i class="fab fa-linkedin-in icons"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/marcelo1811">
+              <i class="fab fa-github icons"></i>
             </a>
           </li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card" id="movies">
         <h2>My Favorite movies</h2>
         <table>
           <th></th>
@@ -91,7 +102,7 @@
           </tbody>
         </table>
       </div>
-      <div class="card">
+      <div class="card" id="about">
         <h2>About this page</h2>
         <p>
           This page has been coded during the <a href="https://www.lewagon.com/" target="_blank">FullStack program @LeWagon</a>.
